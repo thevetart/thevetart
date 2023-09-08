@@ -1,0 +1,23 @@
+.dark-green {
+    color: #0c6347
+}
+
+.light-green {
+    color: #1db085
+}
+
+.accent-green {
+    color: #77ccb2
+}
+
+.btn-dark-green {
+    background-color: #0c6347
+}
+
+.btn-dark-green:hover {
+    background-color: #1db085
+}
+
+h1, h2 {
+    color: #0c6347
+}

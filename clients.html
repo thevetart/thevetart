@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>VETaRT - Clients</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+        <h1 class="text-center display-2 fw-bold">Welcome to VET<span class="light-green">a</span>RT</h1>
+        <p>The concept of the ART of Veterinary Medicine is not new but in the rush to enjoy the huge recent advances in Veterinary 
+            Science we at VETaRT wish to ensure that the  Art of Veterinary science is not a thing of the past. Our patients are the 
+            focus of our care and their differences and varying needs are always in the forefront of our decision making. Our patients
+             are also part of a family that may have, for example, financial or time constraints. All these factors are balance by 
+             VETaRT Vets to reach a logical route through the process of diagnosis and treatment of our Patients.</p>
+        <p>As a likeminded owner we encourage you to seek out a VETaRT vet on the available list.</p>
+        <div>
+            <select class="form-select mb-3" aria-label="VETaRT list" id="vetartList" onchange="changeVetArtList()">
+                <option selected disabled>Choose a county...</option>
+                <option value="Bedfordshire">England,Bedfordshire</option>
+                <option value="Berkshire">England,Berkshire</option>
+                <option value="Buckinghamshire">England,Buckinghamshire</option>
+                <option value="Cambridgeshire">England,Cambridgeshire</option>
+                <option value="Cheshire">England,Cheshire</option>
+            </select>
+            <div id="vetartListResult"></div>
+        </div>
+        <p>To understand we concept we must try to explain the thought process that vets are trained to use. In the fast majority of 
+            cases the first step is to reach a diagnosis the cause of the presenting symptoms, for example , what is causing your pet not 
+            to eat. In some cases this may be straightforward and established after a clinical exam. If further tests are required, e.g. 
+            blood tests these are then performed, diagnosis, the process of establishing the case of the symptoms usually involves a series 
+            of steps. Each step aims to achieve the aim of finding what disease is affecting our patients. It is a process of ruling in or 
+            out the many causes possible and whilst it may be straightforward it often involves a step by step rule out of firstly common 
+            and latterly less common causes of a problem.</p>
+        <p>Each step involves a varying degree of involvement of the patient and their owner. For example a blood sample may be hugely stressful 
+            to one patient or not even noticed by a second. It may involve an additional trip to the practice, with any associated issues such 
+            as patient stress or even availability of transport. The costs of any test both financially and to the environment must be also 
+            considered and balanced with the value of the information it may reveal.</p>
+        <p>A VETaRT Vet considers the costs not just financial but environmental  and ethically on the patient and  each of these steps and they 
+            must be balanced against the potential value and usefulness of the information likely to be obtained for each individual patient. For 
+            example testing for a disease that requires treatment with tablets may not be of value to a patient that cannot take tablets. The 
+            information obtained, even if it is just to rule out a disease will add to the clinical information but is it of value and will it 
+            materially change the treatment plan for that individual patient?</p>
+        <p>Once a definite or potentially presumed diagnosis is reached the next stage is forming a treatment plan, again, each patient as an 
+            individual. This treatment plan should  always be tailored and the owner should be fully involved in producing this treatment plan. 
+            For example the treatment a VETaRT Vet may suggest is appropriate for a young patient with no financial constraints may differ from 
+            that which is appropriate for an elderly patient whose owners are financially restricted. A VETaRT vet will guide the owner, it is our 
+            job to advise the owner not to dictate. Any treatment undertaken must be evaluated both by the vet and with appropriate guidance by the 
+            owner for likely outcome and long-term effect on the patient. Whilst it is impossible to consider every possible pit fall in a treatment 
+            plan a realistic evaluation of the suitability for each patient is part of the VETaRT ethos. We have a moral and ethical responsibility 
+            to protect our patients from harm and above all never cause harm.</p>
+        <p>At VETaRT we undertake to keep the patient and his or her welfare at the forefront at all stages. We have added some case studies to show 
+            how the VETaRT thinking may work in some different. Click on the tabs below to investigate these.</p>
+        <div>
+            <ul class="nav nav-tabs" id="caseStudyTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="cs1-tab" data-bs-toggle="tab" data-bs-target="#cs1-tab-pane" type="button" role="tab" 
+                  aria-controls="cs1-tab-pane" aria-selected="true">Case Study 1</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="cs2-tab" data-bs-toggle="tab" data-bs-target="#cs2-tab-pane" type="button" role="tab" 
+                  aria-controls="cs2-tab-pane" aria-selected="false">Case Study 2</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="cs3-tab" data-bs-toggle="tab" data-bs-target="#cs3-tab-pane" type="button" role="tab" 
+                  aria-controls="cs3-tab-pane" aria-selected="false">Case Study 3</button>
+                </li>
+                <!-- <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane" type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false" disabled>Disabled</button>
+                </li> -->
+              </ul>
+              <div class="tab-content" id="caseStudyTabContent">
+                <div class="tab-pane fade show active" id="cs1-tab-pane" role="tabpanel" aria-labelledby="cs1-tab" tabindex="0">
+                    <p class="pt-1">Tibby is a 14 years old cat whose owner Mrs Smith is somewhat elderly. She struggles to get to the surgery as she 
+                        doesn't drive and her husband sadly passed away 2 years ago. Despite needing to get a taxi Mrs Smith brings Tibby regularly to 
+                        the surgery and 6 months ago Tibby was reported to be getting "a bit stiff" and was started on oral liquid pain killers. Since 
+                        then Tibby has been very happy. Tibby came in for a routine annual vaccination. Whilst having her vaccination it was suggested 
+                        that Tibby should have a routine blood test and despite her financial worries Mrs Smith agreed. This blood test suggested that 
+                        Tibby may had early kidney damage. At this point there are several possible options.</p>
+                    <p>The likely VETaRT option is to discuss all possible options but on questioning the problems with attending the surgery may limit 
+                        the benefit of repeated visits. Tibby gets quite distressed and the cost of a taxi worries Mrs Smith. Tibby appears 100% healthy 
+                        so a plan is made that involves obtaining a urine sample from Tibby when Mrs Smith's daughter is staying next month. This will be 
+                        analysed to establish if any kidney medicines are indicated. Mrs Smith is not keen to change Tibby's diet as she is very fussy 
+                        (there is some evidence that a prescription diet may slow the progression of kidney disease). Mrs Smith is warned that the painkiller 
+                        that Tibby is having is officially contraindicated in kidney disease but as Tibby has benefitted so much it is decided that the 
+                        dose will be reduced so Tibby is on the lowest effective dose.</p>
+                    <p>Happy Tibby and Happy Mrs Smith</p>
+                    <p>A second option would be that Tibby is immediately taken off her painkiller as the use is contraindicated for kidney disease. 
+                        Tibby is now sore and grumpy. Mrs Smith gets a taxi to collect Tibby's new food and Tibby has a second trip to the surgery where 
+                        she stays for a few hours to have her blood pressure taken. This suggests that Tibby's blood pressure is very slightly elevated, 
+                        but Mrs Smith struggles to get Tibby to take the new tablets to treat the high blood pressure. Tibby is now not eating, in pain 
+                        and refusing to take the new tablets. Mrs Smith is worrying about all the taxi and vets fees. Tibby won't sit on her knee anymore 
+                        as she can't jump up any more and Tibby is losing weight as she doesn't like the new food.</p>
+                    <p>Mrs Smith is worrying about Tibby as she doesn't seem a happy cat.</p>
+                    <p>Of course this is the extremes and there are so many treatment plans that are available, for example try the new food but making it 
+                        very clear that if Tibby doesn't like it then her old food is far preferable to not eating. Testing Tibby's blood pressure would be 
+                        the ideal course of action but possibly only if the treatment can be administered easily. This is not in any way a criticism of vets 
+                        but a VETaRT Vet can be expected to happily balance the need for clinical evaluation with the Individual Patient and their needs and 
+                        restrictions.</p>
+
+                </div>
+                <div class="tab-pane fade" id="cs2-tab-pane" role="tabpanel" aria-labelledby="cs2-tab" tabindex="0">
+                    <p class="pt-1">Ben is a 12 year old Black Labrador who presents to his vet with problems getting up from rest. He is otherwise in good 
+                        health but definitely less willing to go for walks these days. In clinical exam Ben has reduced muscle on both hind legs and resents 
+                        hip extension of both hips. He is 2/10 lame when trotted up left hind. Ben is not insured and his owners, whilst wanting to do 
+                        everything for Ben, do not feel they would opt for surgical intervention at this stage of his life, unless there was no other option.</p>
+                    <p>Option 1: By far the most likely cause of Ben's lameness is arthritis so Ben is started on a regime of pain relief and tailored exercise 
+                        and his owner is going to look into the option of some hydro therapy. The VetART vet and client discuss further tests such as X rays 
+                        but as Ben's owner doesn't want surgery they are not performed at this stage. The pain relief will be reviewed regularly and x rays 
+                        taken at any point if his degree of lameness suddenly changes</p>
+                    <p>Ben is home, happy and rapidly improves on his new medication.</p>
+                    <p>Option 2: There are other causes of his lameness  so Ben is admitted and after blood tests he is sedated and X rays taken of his hips 
+                        and stifles. These show he has a significant degree of hip dysplasia in both hips. The vet is keen for Ben to have bilateral hip 
+                        replacements and he is referred for the surgery. Despite both surgeries going to plan Ben spends a large part of the next 6 months 
+                        either having surgery or recovering from his surgery. He has repeated trips to the vets with follow up X rays of both hips.</p>
+                    <p>Ben is very comfortable at 6 months but has now got some elbow pain so he is on pain relief.</p>
+                    <p></p>
+                </div>
+                <div class="tab-pane fade" id="cs3-tab-pane" role="tabpanel" aria-labelledby="cs3-tab" tabindex="0">...</div>
+                <!-- <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">...</div> -->
+              </div>
+        </div>
+    </div>
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+              <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+            <span class="mb-3 mb-md-0 text-muted">© 2023 VETaRT</span>
+          </div>
+      
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-muted" href="#"><img src="img/facebook.svg" class="bi" width="24" height="24" /></a></li>
+            <li class="ms-3"><a class="text-muted" href="#"><img src="img/twitter.svg" class="bi" width="24" height="24" /></a></li>
+            <li class="ms-3"><a class="text-muted" href="#"><img src="img/instagram.svg" class="bi" width="24" height="24" /></a></li>
+          </ul>
+        </footer>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="js/site.js" type="text/javascript"></script>
+  </body>
+</html>
