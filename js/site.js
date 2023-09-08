@@ -6,7 +6,7 @@ function changeVetArtList() {
     
     var ul = document.createElement('ul');
     ul.setAttribute('id', 'theList');
-    var randomLength = Math.floor(Math.random() * 6) + 1;
+    var randomLength = Math.floor(Math.random() * 5) + 1;
     for (i = 0; i <= randomLength - 1; i++) {
     // for (i = 0; i <= arr.length - 1; i++) {
         var li = document.createElement('li');
